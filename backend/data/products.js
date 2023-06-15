@@ -1,9 +1,9 @@
 const products = [
   {
-    
-    name: 'Product 1',
-    image: '/images/1.jpg',
-    description: 'This is the description of Product 1.',
+    name: 'Lamoutor Vintage Perfume ',
+    image: '/images/1.jpeg',
+    description:
+      'Lamoutor Vintage Perfume Spray Bottle 100ml Pink Vintage Refillable Perfume Bottle with Long Tassel.',
     brand: 'Brand A',
     category: 'Category X',
     price: 19.99,
@@ -12,10 +12,10 @@ const products = [
     numReviews: 20,
   },
   {
-   
-    name: 'Product 2',
-    image: '/images/2.jpg',
-    description: 'This is the description of Product 2.',
+    name: 'Ariana Grande Sweet',
+    image: '/images/2.jpeg',
+    description:
+      'Ariana Grande Sweet Like Candy Eau De Parfum - 1 oz spray bottle.',
     brand: 'Brand B',
     category: 'Category Y',
     price: 29.99,
@@ -24,10 +24,9 @@ const products = [
     numReviews: 10,
   },
   {
-   
-    name: 'Product 3',
-    image: '/images/3.jpg',
-    description: 'This is the description of Product 3.',
+    name: 'Miss Dior Blooming Bouquet',
+    image: '/images/3.jpeg',
+    description: `Miss Dior Blooming Bouquet: Eau de Toilette Women's Perfume | DIOR.`,
     brand: 'Brand C',
     category: 'Category X',
     price: 14.99,
@@ -36,10 +35,9 @@ const products = [
     numReviews: 8,
   },
   {
-   
-    name: 'Product 4',
-    image: '/images/4.jpg',
-    description: 'This is the description of Product 4.',
+    name: 'Pride and Prejudice Perfume',
+    image: '/images/4.jpeg',
+    description: 'Pride and Prejudice Perfume — Immortal Perfumes.',
     brand: 'Brand A',
     category: 'Category Z',
     price: 39.99,
@@ -48,10 +46,10 @@ const products = [
     numReviews: 15,
   },
   {
- 
-    name: 'Product 5',
-    image: '/images/5.jpg',
-    description: 'This is the description of Product 5.',
+    name: 'Tiffany & Co. Rose Gold Eau de Parfum',
+    image: '/images/5.jpeg',
+    description:
+      'Bright and effervescent, Tiffany & Co. Rose Gold fragrance embodies the spirit of optimism. Created by master perfumer Jerome Epinette of Robertet,.',
     brand: 'Brand B',
     category: 'Category Y',
     price: 24.99,
@@ -60,10 +58,11 @@ const products = [
     numReviews: 12,
   },
   {
-  
-    name: 'Product 6',
-    image: '/images/6.jpg',
-    description: 'This is the description of Product 6.',
+    name: `Viktor&Rolf
+Flowerbomb`,
+    image: '/images/6.jpeg',
+    description:`'Viktor&Rolf
+Flowerbomb.`,
     brand: 'Brand C',
     category: 'Category Z',
     price: 49.99,
