@@ -144,3 +144,4 @@ const uploadFileHandler = async(e)=>{
 }
 
 export default ProductEditScreen
+

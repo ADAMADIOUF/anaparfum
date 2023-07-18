@@ -9,10 +9,10 @@ import { Button, Card, Col, Image, ListGroup, ListGroupItem, Row } from 'react-b
 import { useCreateOrderMutation } from '../slices/ordersApiSlice'
 import { clearCartItems } from '../slices/cartSlice'
 const PlaceOrderScreen = () => {
- const navigate =useNavigate()
- const dispatch =useDispatch()
- const cart = useSelector((state)=>state.cart)
- const[createdOrder,{isLoading,error}]=useCreateOrderMutation()
+ const navigate = useNavigate()
+ const dispatch = useDispatch()
+ const cart = useSelector((state) => state.cart)
+ const [createdOrder, { isLoading, error }] = useCreateOrderMutation()
  useEffect(() => {
    if (!cart.shippingAddress.address) {
      navigate('/shipping')
@@ -21,22 +21,24 @@ const PlaceOrderScreen = () => {
    }
  }, [cart.paymentMethod, cart.shippingAddress.address, navigate])
  const placeOrderHandler = async () => {
-  try {
-    const res = await createdOrder({
-      orderItems: cart.cartItems,
-      shippingAddress: cart.shippingAddress,
-      paymentMethod: cart.paymentMethod,
-      itemsPrice: cart.itemsPrice,
-      shippingPrice: cart.shippingPrice,
-      taxPrice: cart.taxPrice,
-      totalPrice: cart.totalPrice,
-    }).unwrap();
-    dispatch(clearCartItems());
-    navigate(`/order/${res._id}`);
-  } catch (error) {
-    toast.error(error.message || JSON.stringify(error));
-  }
-};
+   try {
+     const res = await createdOrder({
+       orderItems: cart.cartItems,
+       shippingAddress: cart.shippingAddress,
+       paymentMethod: cart.paymentMethod,
+       itemsPrice: cart.itemsPrice,
+       shippingPrice: cart.shippingPrice,
+       taxPrice: cart.taxPrice,
+       totalPrice: cart.totalPrice,
+     }).unwrap()
+     dispatch(clearCartItems())
+     navigate(`/order/${res._id}`)
+   } catch (error) {
+     toast.error(error.message || JSON.stringify(error))
+   }
+ }
+
+
 
 
   return (
